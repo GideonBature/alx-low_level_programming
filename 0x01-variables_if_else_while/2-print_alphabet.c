@@ -9,11 +9,10 @@ int main(void)
 {
 	char ch;
 
-	// loop through the lowercase alphabet a to z
 	for (ch = 'a'; ch <= 'z'; ch++)
 	{
 		putchar(ch);
 	}
-	putchar('\n'); //print a newline character
+	putchar('\n');
 	return 0;
 }
