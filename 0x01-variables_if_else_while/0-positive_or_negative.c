@@ -10,12 +10,6 @@
 
 /* betty style doc for function main goes there */
 
-/**
-*takes in a random number
-*check if the number is positive, negative or zero
-*then prints it out accordingly
-*/
-
 int main(void)
 {
 	int n;
