@@ -11,9 +11,9 @@
 /* betty style doc for function main goes there */
 
 /**
- * This function takes in a random number
- * check if the number is positive, negative or zero
- * then prints it out accordingly
+*takes in a random number
+*check if the number is positive, negative or zero
+*then prints it out accordingly
 */
 
 int main(void)
