@@ -5,7 +5,8 @@
  */
 int main(void)
 {
-	fwrite("and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", 1, 59, stdout);
+	fwrite("and that piece of art is useful\"", 1, 31, stdout);
+	fwrite(" - Dora Korpar, 2015-10-19\n", 1, 26, stdout);
 
 	return (1);
 }
