@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -S -march=x86 $CFILE
+gcc -S -masm=intel $CFILE
