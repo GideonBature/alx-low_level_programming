@@ -1,81 +1,41 @@
-# 0x00-hello_world
+# ALX-Low_Level_Programming
 
-Welcome to the **0x00-hello_world** directory of the ALX-Low_Level_Programming repository! This directory contains a collection of introductory programs and exercises aimed at getting you started with low-level programming.
+Welcome to the ALX-Low_Level_Programming repository! This repository contains a collection of scripts and C programs that focus on various aspects of low-level programming.
 
-## Introduction
+## Preprocessor
 
-In this directory, you will find a set of simple programs written in various low-level programming languages, such as Assembly, C, or any other language that focuses on programming at the hardware level. These programs serve as a foundation for understanding the fundamental concepts of low-level programming and the interactions between software and hardware.
+The `preprocessor` directory contains a script that runs a C file through the preprocessor and saves the result into another file. The C file name is provided through the `$CFILE` variable, and the output is saved in the file `c`.
 
-## Contents
+## Compiler
 
-The **0x00-hello_world** directory includes the following files:
+The `compiler` directory includes a script that compiles a C file without linking. The C file name is stored in the `$CFILE` variable, and the output file is named the same as the C file but with the extension `.o`. For example, if the C file is `main.c`, the output file will be `main.o`.
 
-1. **hello.asm**: This file contains a basic assembly language program that prints "Hello, World!" to the console. It demonstrates how to work with registers, perform system calls, and manipulate memory at a low level.
+## Assembler
 
-2. **hello.c**: This file contains a C programming language equivalent of the "Hello, World!" program. It illustrates the minimal syntax and structure required to achieve the same output using a higher-level language that compiles to machine code.
+The `assembler` directory provides a script that generates the assembly code of a C program and saves it in an output file. The C file name is stored in the `$CFILE` variable, and the output file is named the same as the C file but with the extension `.s`. For instance, if the C file is `main.c`, the output file will be `main.s`.
 
-3. **Makefile**: The Makefile in this directory provides a convenient way to compile the programs. It includes rules for assembling the assembly language program and compiling the C program.
+## Name
 
-## Getting Started
+The `name` directory contains a script that compiles a C file and creates an executable named `cisfun`. The C file name is stored in the `$CFILE` variable.
 
-To run the programs in this directory, follow these steps:
+## Hello, puts
 
-1. Ensure that you have a low-level programming environment set up on your machine, including an assembler and a C compiler.
+The `hello_puts` directory includes a C program that prints the exact statement "Programming is like building a multilingual puzzle" followed by a new line. The program utilizes the `puts` function and returns the value 0.
 
-2. Clone this repository to your local machine using the following command:
+## Hello, printf
 
+The `hello_printf` directory provides a C program that prints the statement "with proper grammar, but the outcome is a piece of art" followed by a new line. The program uses the `printf` function, returns 0, and compiles without warnings with the `-Wall` gcc option.
 
-3. Navigate to the **0x00-hello_world** directory:
+## Size is not grandeur, and territory does not make a nation
 
+The `size_types` directory contains a C program that prints the size of various types on the computer it is compiled and run on. The program produces the same output as the example, and it returns 0. Note that warnings are allowed in this program.
 
-4. Compile and run the programs using the provided Makefile:
+## Intel
 
-- To compile the assembly language program, run:
+The `intel` directory offers a script that generates the assembly code (Intel syntax) of a C program and saves it in an output file. The C file name is stored in the `$CFILE` variable, and the output file is named the same as the C file but with the extension `.s`. For example, if the C file is `main.c`, the output file will be `main.s`.
 
-  ```
-  make hello_asm
-  ```
+## UNIX is basically a simple operating system, but you have to be a genius to understand the simplicity
 
-  This command assembles the `hello.asm` file and produces an executable file called `hello_asm`.
+The `unix_genius` directory includes a C program that prints the statement "and that piece of art is useful" - Dora Korpar, 2015-10-19, followed by a new line, to the standard error. This program does not use the functions listed in the `NAME` section of the man (3) `printf` or man (3) `puts`. It returns 1 and compiles without warnings when using the `-Wall` gcc option.
 
-- To compile the C program, run:
-
-  ```
-  make hello_c
-  ```
-
-  This command compiles the `hello.c` file and generates an executable named `hello_c`.
-
-5. Execute the compiled programs:
-
-- For the assembly language program, run:
-
-  ```
-  ./hello_asm
-  ```
-
-- For the C program, run:
-
-  ```
-  ./hello_c
-  ```
-
-You should see the output "Hello, World!" printed to the console.
-
-## Contributing
-
-If you'd like to contribute to the **0x00-hello_world** directory, feel free to fork this repository, make your changes, and submit a pull request. We welcome improvements, additional low-level programming examples, and any valuable insights related to the topic.
-
-## Resources
-
-If you're new to low-level programming or looking for additional resources to enhance your understanding, check out the following references:
-
-- [Assembly Language Basics](https://www.tutorialspoint.com/assembly_programming/index.htm)
-- [C Programming Language](https://en.cppreference.com/w/c)
-
-## License
-
-The contents of this repository are licensed under the [MIT License](https://opensource.org/licenses/MIT). Feel free to use and modify the code for educational purposes. See the `LICENSE` file for more information.
-
-Let's dive into the fascinating world of low-level programming together! Happy coding!
-
+Feel free to explore the directories and engage with the provided scripts and C programs. Happy low-level programming!
