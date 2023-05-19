@@ -5,7 +5,7 @@
  */
 int main(void)
 {
-	char num;
+	int num;
 
 	num = '0';
 
