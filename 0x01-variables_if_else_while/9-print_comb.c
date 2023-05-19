@@ -11,7 +11,7 @@ int main(void)
 	comma = ',';
 	space = ' ';
 
-	write(1,"0",1);
+	fwrite("0", 1, 1, stdout);
 
 	while (num <= '9')
 	{
