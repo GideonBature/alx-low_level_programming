@@ -20,5 +20,6 @@ int main(void)
 		putc(upper_ch, stdout);
 		upper_ch++;
 	}
+	putc('\n', stdout);
 	return (0);
 }
