@@ -11,7 +11,7 @@ int main(void)
 	comma = ',';
 	space = ' ';
 
-	putchar('0');
+	write(1,"0",1);
 
 	while (num <= '9')
 	{
@@ -20,5 +20,6 @@ int main(void)
 		putchar(num);
 		num++;
 	}
+	putchar('$');
 	return (0);
 }
