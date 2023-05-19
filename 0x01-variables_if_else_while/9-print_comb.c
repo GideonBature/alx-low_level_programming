@@ -5,7 +5,7 @@
  */
 int main(void)
 {
-	char num, comma, space;
+	int num, comma, space;
 
 	num = '1';
 	comma = ',';
