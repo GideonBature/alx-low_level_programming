@@ -2,6 +2,7 @@
 #include <stdio.h>
 /**
  * _abs - prints absolute value
+ * @num: parameter that carries +ve and -ve numbers
  * Return: 0
  */
 int _abs(int num)
