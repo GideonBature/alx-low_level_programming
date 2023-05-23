@@ -8,12 +8,7 @@ int _abs(int num)
 {
 	if (num < 0)
 	{
-		num = -num;
-		printf("%d\n", num);
-	}
-	else
-	{
-		printf("%d\n", num);
+		printf("%d\n", -num);
 	}
 	return (0);
 }
