@@ -4,12 +4,12 @@
  * _abs - prints absolute value
  * Return: 0
  */
-int _abs(int)
+int _abs(int n)
 {
-	if (num < 0)
+	if (n < 0)
 	{
-		num = -num;
-		printf("%d", num);
+		num = (-1 * n);
 	}
+	printf("%d", num);
 	return;
 }
