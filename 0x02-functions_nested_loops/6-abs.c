@@ -11,8 +11,9 @@ int _abs(int num)
 		num = -num;
 		printf("%d", num);
 	}
-	else if (num > 0)
+	else
 	{
 		printf("%d", num);
-	}	
+	}
+	return (0);
 }
