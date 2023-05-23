@@ -6,10 +6,12 @@
  */
 int _abs(int n)
 {
+	int num;
+
 	if (n < 0)
 	{
 		num = (-1 * n);
 	}
 	printf("%d", num);
-	return;
+	return (0);
 }
