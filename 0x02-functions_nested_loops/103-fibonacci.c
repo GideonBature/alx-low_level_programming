@@ -7,7 +7,7 @@ int main(void)
 {
 	long int i, num1 = 1, num2 = 2, num3 = 0, sum = 0;
 
-	for (i = 0; i < 30; i++)
+	for (i = 0; i <= 30; i++)
 	{
 		if (num2 % 2 == 0 && num3 < 4000000)
 		{
