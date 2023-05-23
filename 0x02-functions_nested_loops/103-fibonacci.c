@@ -9,7 +9,7 @@ int main(void)
 
 	for (i = 0; i < 30; i++)
 	{
-		if (num2 % 2 == 0 && num2 < 4000000)
+		if (num2 % 2 == 0 && num3 < 4000000)
 		{
 			sum += num2;
 		}
