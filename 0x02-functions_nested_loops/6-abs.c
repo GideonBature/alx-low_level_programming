@@ -9,15 +9,15 @@ int _abs(int num)
 	if (num < 0)
 	{
 		num = (num * -1);
-		printf("%d\n", num);
+		printf("%d", num);
 	}
 	else if (num > 0)
 	{
-		printf("%d\n", num);
+		printf("%d", num);
 	}
 	else
 	{
-		printf("%d\n", 0);
+		printf("%d", 0);
 	}
 	return (0);
 }
