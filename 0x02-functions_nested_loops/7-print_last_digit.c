@@ -12,10 +12,12 @@ int print_last_digit(int num)
 	if (num < 0)
 	{
 		last = ((-1 * num) % 10);
+		printf("%d", last);
 	}
 	else
 	{
 		last =  (num % 10);
+		printf("%d", last);
 	}
 	return (last);
 }
