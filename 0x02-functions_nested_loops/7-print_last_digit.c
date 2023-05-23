@@ -7,14 +7,15 @@
  */
 int print_last_digit(int num)
 {
+	int last;
+
 	if (num < 0)
 	{
-		printf("%d", (-1 * num) % 10);
-		return ((-1 * num) % 10);
+		last = ((-1 * num) % 10);
 	}
 	else
 	{
-		printf("%d", num % 10);
-		return (num % 10);
+		last =  (num % 10);
 	}
+	return (last);
 }
