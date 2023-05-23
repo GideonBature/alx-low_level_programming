@@ -14,8 +14,6 @@ int _abs(int num)
 	else if (num > 0)
 	{
 		printf("%d", num);
-	}
-	else
-	
+	}	
 	return (0);
 }
