@@ -10,6 +10,7 @@ int _abs(int num)
 	{
 		num = -num;
 		printf("%d", num);
+		break;
 	}
 	return (num);
 }
