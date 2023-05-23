@@ -7,7 +7,7 @@ int main(void)
 {
 	long int i, n1 = 0, n2 = 1, sum = 0;
 
-	for (i = 0; i <= 50; i++)
+	for (i = 0; i < 50; i++)
 	{
 		sum = n1 + n2;
 
@@ -15,7 +15,7 @@ int main(void)
 		n2 = sum;
 
 		printf("%ld", sum);
-		if (i < 50)
+		if (i < 49)
 		{
 			printf(",");
 			printf(" ");
