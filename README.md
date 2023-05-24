@@ -1,52 +1,33 @@
-# ALX-Low_Level_Programming
+# Low level programming with C
 
-Welcome to the ALX-Low_Level_Programming repository! This repository is dedicated to providing a comprehensive collection of resources, code examples, and projects focused on low-level programming.
-
-## Introduction
-
-The ALX-Low_Level_Programming repository aims to equip individuals with a deep understanding and practical skills in the field of low-level programming. It focuses on the foundational principles and intricacies of programming at the hardware level, enabling learners to develop software that interacts closely with computer hardware.
-
-## Contents
-
-The repository is organized into several directories, each focusing on different aspects of low-level programming. Here's an overview of the main directories and their contents:
-
-- **0x00-hello_world**: This directory contains a collection of introductory programs and exercises aimed at getting started with low-level programming. It includes programs written in assembly language and higher-level languages like C.
-
-- **0x01-variables_if_else_while**: In this directory, you'll find programs and exercises that explore variables, conditional statements (if-else), and loops (while) in the context of low-level programming.
-
-- **0x02-functions_nested_loops**: This directory covers the concept of functions and nested loops in low-level programming. It provides programs and exercises to strengthen your understanding and proficiency in these areas.
-
-- **0x03-debugging**: Here, you'll find resources and examples that focus on debugging techniques specific to low-level programming. It covers strategies for identifying and resolving common issues in low-level code.
-
-- **0x04-pointers_arrays_strings**: This directory delves into the topics of pointers, arrays, and strings in low-level programming. It offers programs and exercises to enhance your skills in working with these fundamental data structures.
-
-- **0x05-more_pointers_arrays_strings**: Building upon the previous directory, this section provides additional programs and exercises to further strengthen your understanding of pointers, arrays, and strings.
-
-- **0x06-pointers_arrays_strings**: This directory continues the exploration of pointers, arrays, and strings, offering more advanced programs and exercises to deepen your knowledge and proficiency.
-
-## Getting Started
-
-To get started with the ALX-Low_Level_Programming repository, follow these steps:
-
-1. Clone this repository to your local machine using the following command:
-
-
-2. Navigate to the directory of interest and explore the code examples, projects, and resources available.
-
-3. Read the README files within each directory to understand the contents and objectives of the specific sections.
-
-4. Engage in the provided programs, exercises, and projects to gain practical experience in low-level programming concepts and techniques.
-
-5. Feel free to modify and adapt the code examples for your own learning purposes. Experimentation and hands-on practice are key to solidifying your understanding.
-
-## Contributing
-
-Contributions to the ALX-Low_Level_Programming repository are highly encouraged. If you have improvements, additional examples, or valuable insights to share, please feel free to fork this repository and submit a pull request. Your contributions will help enhance the learning experience for the community.
-
-## Resources
-
-To supplement your learning and further explore low-level programming, here are some additional resources:
-
-- [Low-Level Programming: C, Assembly, and Program Execution on Intel® 64 Architecture](https://www.amazon.com/Low-Level-Programming-Assembly-Execution-Architecture/dp/1484224027) by Igor Zhirkov
-- [x86 Assembly Language and C Fundamentals](https://www.pluralsight.com/courses/x86-assembly-language-c-fundamentals) - Pl
-
+## Topics covered:
+### 0. [Hello, World](https://github.com/GideonBature/alx-low_level_programming/tree/master/0x00-hello_world)
+### 1. [Variables, if, else, while](https://github.com/GideonBature/alx-low_level_programming/tree/master/0x01-variables_if_else_while)
+### 2. [Functions, nested loops](https://github.com/GideonBature/alx-low_level_programming/tree/master/0x02-functions_nested_loops)
+### 3. [Debugging](https://github.com/GideonBature/alx-low_level_programming/tree/master/0x03-debugging)
+### 4. [More functions, more nested loops](https://github.com/GideonBature/alx-low_level_programming/tree/master/0x04-more_functions_nested_loops)
+### 5. [Pointers, arrays, and strings](https://github.com/GideonBature/alx-low_level_programming/tree/master/0x05-pointers_arrays_strings)
+### 6. [More pointers, arrays, and strings](https://github.com/GideonBature/alx-low_level_programming/tree/master/0x06-pointers_arrays_strings)
+### 7. [Even more pointers, arrays, and strings](https://github.com/GideonBature/alx-low_level_programming/tree/master/0x07-pointers_arrays_strings)
+### 8. [Recursion](https://github.com/GideonBature/alx-low_level_programming/tree/master/0x08-recursion)
+### 9. [Static libraries](https://github.com/GideonBature/alx-low_level_programming/tree/master/0x09-static_libraries)
+### 10. [argc, argv](https://github.com/GideonBature/alx-low_level_programming/tree/master/0x0A-argc_argv)
+### 11. [malloc, free](https://github.com/GideonBature/alx-low_level_programming/tree/master/0x0B-malloc_free)
+### 12. [More malloc, free](https://github.com/GideonBature/alx-low_level_programming/tree/master/0x0C-more_malloc_free)
+### 13. [Preprocessor](https://github.com/GideonBature/alx-low_level_programming/tree/master/0x0D-preprocessor)
+### 14. [Structures, typedef](https://github.com/GideonBature/alx-low_level_programming/tree/master/0x0E-structures_typedef)
+### 15. [Function pointers](https://github.com/GideonBature/alx-low_level_programming/tree/master/0x0F-function_pointers)
+### 16. [Variadic functions](https://github.com/GideonBature/alx-low_level_programming/tree/master/0x10-variadic_functions)
+### 17. [printf](https://github.com/GideonBature/printf)
+### 18. [Singly linked lists](https://github.com/GideonBature/alx-low_level_programming/tree/master/0x12-singly_linked_lists)
+### 19. [More singly linked lists](https://github.com/GideonBature/alx-low_level_programming/tree/master/0x13-more_singly_linked_lists)
+### 20. [Bit manipulation](https://github.com/GideonBature/alx-low_level_programming/tree/master/0x14-bit_manipulation)
+### 21. [File I/O](https://github.com/GideonBature/alx-low_level_programming/tree/master/0x15-file_io)
+### 22. [Simple shell](https://github.com/GideonBature/simple_shell)
+### 23. [Doubly linked lists](https://github.com/GideonBature/alx-low_level_programming/tree/master/0x17-doubly_linked_lists)
+### 24. [Dynamic libraries](https://github.com/GideonBature/alx-low_level_programming/tree/master/0x18-dynamic_libraries)
+### 25. [Stacks, Queues - LIFO, FIFO](https://github.com/GideonBature/monty)
+### 26. [Hash tables](https://github.com/GideonBature/alx-low_level_programming/tree/master/0x1A-hash_tables)
+### 27. [Sorting algorithms & Big O](https://github.com/GideonBature/sorting_algorithms)
+### 28. [Makefiles](https://github.com/GideonBature/alx-low_level_programming/tree/master/0x1C-makefiles)
+### 29. [Binary trees](https://github.com/GideonBature/binary_trees)
