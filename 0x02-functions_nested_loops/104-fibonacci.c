@@ -5,7 +5,7 @@
  */
 int main(void)
 {
-	long unsigned int i, a = 1, b = 2, c;
+	unsigned long int i, a = 1, b = 2, c;
 
 	for (i = 0; i < 98; i++)
 	{
