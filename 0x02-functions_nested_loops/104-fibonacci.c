@@ -5,11 +5,11 @@
  */
 int main(void)
 {
-	long int i, a = 1, b = 2, c;
+	long unsigned int i, a = 1, b = 2, c;
 
 	for (i = 0; i < 98; i++)
 	{
-		printf("%ld", a);
+		printf("%lu", a);
 
 		c = a + b;
 		a = b;
