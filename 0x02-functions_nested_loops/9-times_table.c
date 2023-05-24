@@ -13,7 +13,7 @@ void times_table(void)
 		{
 			res = n1 * n2;
 
-			printf("%2d", res);
+			printf("%3d", res);
 			if (n2 != 9)
 			{
 				printf(",");
