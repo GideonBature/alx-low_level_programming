@@ -4,7 +4,6 @@
  * @n: parameter
  * Return: 0
  */
-void print_number_less(int n);
 void print_number(int n)
 {
 	if (n < 0)
@@ -13,43 +12,14 @@ void print_number(int n)
 	}
 	else
 	{
-		if (n >= 0 && n <= 9)
-		{
-			_putchar(n + '0');
-		}
-		else if (n >= 10 && n <= 99)
-		{
-			_putchar((n / 10) + '0');
-			_putchar((n % 10) + '0');
-		}
-		else if (n >= 100 && n <= 999)
-		{
-			_putchar((n / 100) + '0');
-			_putchar(((n / 10) % 10) + '0');
-			_putchar((n % 10) + '0');
-		}
-		else if (n >= 1000 && n <= 9999)
-		{
-			_putchar((n / 1000) + '0');
-			_putchar((n / 100) % 10 + '0');
-			_putchar((n / 10) % 10 + '0');
-			_putchar((n % 10) + '0');
-		}
-		else if (n >= 10000 && n <= 99999)
-		{
-			_putchar((n / 10000) + '0');
-			_putchar((n / 1000) % 10 + '0');
-			_putchar((n / 100) % 10 + '0');
-			_putchar((n / 10) % 10 + '0');
-			_putchar(n % 10 + '0');
-		}
+		print_number_more(n);
 	}
-}
 /**
  * print_number_less - print the negative numbers
  * @n: parameter
  * Return: 0
  */
+void print_number_less(int n);
 void print_number_less(int n)
 {
 	n = -n;
@@ -89,4 +59,61 @@ void print_number_less(int n)
 		_putchar((n / 10) % 10 + '0');
 		_putchar(n % 10 + '0');
 	}
+	else if (n >= 100000 && n <= 999999)
+	{
+		_putchar('-');
+		_putchar((n / 100000) + '0');
+		_putchar((n / 10000) % 10 + '0');
+		_putchar((n / 1000) % 10 + '0');
+		_putchar((n / 100) % 10 + '0');
+		_putchar((n / 10) % 10 + '0');
+		_putchar(n % 10 + '0');
+	}
+}
+/**
+ * print_number_more - print the positive numbers
+ * @n: parameter
+ * Return: 0
+ */
+void print_number_more(int n);
+void print_number_more(int n)
+{
+	if (n >= 0 && n <= 9)
+	{
+		_putchar(n + '0');
+	}
+	else if (n >= 10 && n <= 99)
+	{
+		_putchar((n / 10) + '0');
+		_putchar((n % 10) + '0');
+	}
+	else if (n >= 100 && n <= 999)
+	{
+		_putchar((n / 100) + '0');
+		_putchar(((n / 10) % 10) + '0');
+		_putchar((n % 10) + '0');
+	}
+	else if (n >= 1000 && n <= 9999)
+	{
+		_putchar((n / 1000) + '0');
+		_putchar((n / 100) % 10 + '0');
+		_putchar((n / 10) % 10 + '0');
+		_putchar((n % 10) + '0');
+	}
+	else if (n >= 10000 && n <= 99999)
+	{
+		_putchar((n / 10000) + '0');
+		_putchar((n / 1000) % 10 + '0');
+		_putchar((n / 100) % 10 + '0');
+		_putchar((n / 10) % 10 + '0');
+		_putchar(n % 10 + '0');
+	}
+	else if (n >= 100000 && n <= 999999)
+	{
+		_putchar((n / 100000) + '0');
+		_putchar((n / 10000) % 10 + '0');
+		_putchar((n / 1000) % 10 + '0');
+		_putchar((n / 100) % 10 + '0');
+		_putchar((n / 10) % 10 + '0');
+		_putchar(n % 10 + '0');
 }
