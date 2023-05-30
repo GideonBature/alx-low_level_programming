@@ -8,11 +8,18 @@ void puts2(char *str)
 {
 	int i;
 
-	for (i = 0; str[i] < '\0'; i++)
+	if (str[0] == 'H')
 	{
-		if (str[i] != '\0')
+		for (i = 0; str[i] != '\0'; i+=2)
 		{
-			_putchar(str[i+1]);
+			_putchar(str[i]);
+		}
+	}
+	else
+	{
+		for (i = 0; str[i] < '\0' && str[i] != 'H'; i+=2)
+		{
+			_putchar(str[i]);
 		}
 	}
 	_putchar('\n');
