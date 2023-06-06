@@ -15,11 +15,11 @@ void print_diagsums(int *a, int size)
 		{
 			if (i == j)
 			{
-				sumd1 += a[i][j];
+				sumd1 += a[i * size + j];
 			}
 			if (i + j == (size - 1))
 			{
-				sumd2 += a[i][j];
+				sumd2 += a[i * size + j];
 			}
 		}
 	}
