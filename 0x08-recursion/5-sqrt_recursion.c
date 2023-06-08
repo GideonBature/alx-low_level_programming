@@ -2,18 +2,20 @@
 /**
  * _sqrt_recursion - returns the natural square root of a number.
  * @n: number whose squareroot is to be calculated
+ * @bn: base number
  * Return: 0
  */
-int _sqrt_recursion_calculator(int n, int m);
+int _sqrt_recursion_calculator(int n, int bn);
 int _sqrt_recursion(int n)
 {
 	return (_sqrt_recursion_calculator(n, 1));
 }
 
 /**
- * int _sqrt_recursion_calculator - contains the main logic
+ * _sqrt_recursion_calculator - contains the main logic
  * @n: number whose sqrt is to be calculated
  * @bn: base number
+ * Return: 0
  */
 int _sqrt_recursion_calculator(int n, int bn)
 {
