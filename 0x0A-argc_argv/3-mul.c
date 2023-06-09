@@ -13,14 +13,15 @@ int main(int argc, char *argv[])
 	if (argc != 3)
 	{
 		printf("ERROR\n");
+		return (1);
 	}
 	else if (argc == 3)
 	{
-		num1 = atoi(argv[1]);
-		num2 = atoi(argv[2]);
+		num1 = strtol(argv[1], NULL, 10);
+		num2 = strtol(argv[2], NULL, 10);
 
 		mul = num1 * num2;
 		printf("%ld\n", mul);
 	}
-	return (1);
+	return (0);
 }
