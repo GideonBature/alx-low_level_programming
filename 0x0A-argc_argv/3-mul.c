@@ -8,7 +8,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int mul, num1, num2;
+	long int mul, num1, num2;
 
 	if (argc != 3)
 	{
@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
 		num2 = atoi(argv[2]);
 
 		mul = num1 * num2;
-		printf("%d\n", mul);
+		printf("%ld\n", mul);
 	}
 	return (0);
 }
