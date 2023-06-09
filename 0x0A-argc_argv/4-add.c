@@ -11,20 +11,26 @@ int main(int argc, char *argv[])
 {
 	long int i, num, sum = 0;
 
-	for (i = 0; i < argc; i++)
+	if (argc == 1)
 	{
-
-		if (*argv[i] >= ':' && *argv[i] <= '}')
-		{
-			printf("Error\n");
-			return (1);
-		}
-		else
-		{
-			num = atoi(argv[i]);
-			sum += num;
-		}
+		printf("0\n");
 	}
-	printf("%ld\n", sum);
+	else
+	{
+		for (i = 0; i < argc; i++)
+		{
+			if (*argv[i] >= ':' && *argv[i] <= '}')
+			{
+				printf("Error\n");
+				return (1);
+			}
+			else
+			{
+				num = atoi(argv[i]);
+				sum += num;
+			}
+		}
+		printf("%ld\n", sum);
+	}
 	return (0);
 }
