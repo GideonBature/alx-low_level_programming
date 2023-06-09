@@ -4,7 +4,7 @@
  * main - multiplies two numbers.
  * @argc: argument count
  * @argv: argument vector
- * Return: 0
+ * Return: 1
  */
 int main(int argc, char *argv[])
 {
@@ -13,7 +13,6 @@ int main(int argc, char *argv[])
 	if (argc != 3)
 	{
 		printf("ERROR\n");
-		return (1);
 	}
 	else if (argc == 3)
 	{
