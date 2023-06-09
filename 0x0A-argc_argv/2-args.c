@@ -12,6 +12,7 @@ int main(int argc, char *argv[])
 	for (i = 0; i < argc; i++)
 	{
 		char *name;
+
 		name = argv[i];
 
 		for (j = 0; name[j] != '\0'; j++)
