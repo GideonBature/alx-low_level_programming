@@ -34,37 +34,30 @@ int check_change(int n)
 {
 	int count = 0;
 
-	if (n < 0)
+	while (n >= 25)
 	{
-		printf("%d\n", 0);
+		n -= 25;
+		count++;
 	}
-	else
+	while (n >= 10)
 	{
-		while (n >= 25)
-		{
-			n -= 25;
-			count++;
-		}
-		while (n >= 10)
-		{
-			n -= 10;
-			count++;
-		}
-		while (n >= 5)
-		{
-			n -= 5;
-			count++;
-		}
-		while (n >= 2)
-		{
-			n -= 2;
-			count++;
-		}
-		while (n >= 1)
-		{
-			n -= 1;
-			count++;
-		}
+		n -= 10;
+		count++;
+	}
+	while (n >= 5)
+	{
+		n -= 5;
+		count++;
+	}
+	while (n >= 2)
+	{
+		n -= 2;
+		count++;
+	}
+	while (n >= 1)
+	{
+		n -= 1;
+		count++;
 	}
 	return (count);
 }
