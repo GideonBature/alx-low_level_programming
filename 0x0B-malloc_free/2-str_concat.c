@@ -23,18 +23,20 @@ char *str_concat(char *s1, char *s2)
 		return (NULL);
 	}
 
-	if (s1 == NULL && s2 == NULL)
+	if (s1 != NULL)
 	{
-		str = "";
-	}
-	for (i = 0; i < len1; i++)
-	{
-		str[i] = s1[i];
+		for (i = 0; i < len1; i++)
+		{
+			str[i] = s1[i];
+		}
 	}
 
-	for (j = 0; j < len2; j++)
+	if (s2 != NULL)
 	{
-		str[len1 + j] = s2[j];
+		for (j = 0; j < len2; j++)
+		{
+			str[len1 + j] = s2[j];
+		}
 	}
 	str[len1 + len2] = '\0';
 	return (str);
