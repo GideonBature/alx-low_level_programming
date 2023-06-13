@@ -17,18 +17,28 @@ char *str_concat(char *s1, char *s2)
 
 	if (s1 == NULL)
 	{
-		return (NULL);
+		return (s2);
 	}
-
-	for (i = 0; s1[i] != '\0'; i++)
+	else if (s2 == NULL)
 	{
-		str[i] = s1[i];
+		return (s1);
 	}
-
-	for (j = 0; s2[j] != '\0'; j++)
+	else if (s1 == NULL && s2 == NULL)
 	{
-		str[strlen(s1) + j] = s2[j];
+		return ("");
 	}
-	str[strlen(s1) + j] = '\0';
-	return (str);
+	else
+	{
+		for (i = 0; s1[i] != '\0'; i++)
+		{
+			str[i] = s1[i];
+		}
+		
+		for (j = 0; s2[j] != '\0'; j++)
+		{
+			str[strlen(s1) + j] = s2[j];
+		}
+		str[strlen(s1) + j] = '\0';
+		return (str);
+	}
 }
