@@ -43,17 +43,5 @@ int **alloc_grid(int width, int height)
 		}
 	}
 	return (arr);
-}
-
-void free_grid(int **grid, int height)
-{
-        int i;
-
-        /* Free the memory for the array */
-        for (i = 0; i < height; i++)
-        {
-                free(grid[i]);
-        }
-
-        free(grid);
+	free(arr);
 }
