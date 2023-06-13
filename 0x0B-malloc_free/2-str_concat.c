@@ -13,10 +13,15 @@ char *str_concat(char *s1, char *s2)
 	unsigned int i, j, len1, len2;
 	char *str;
 
-	len1 = (s1 == NULL)? 0 : strlen(s1);
-	len2 = (s2 == NULL)? 0 : strlen(s2);
+	len1 = (s1 == NULL) ? 0 : strlen(s1);
+	len2 = (s2 == NULL) ? 0 : strlen(s2);
 
 	str = malloc(len1 + len2 + 1);
+
+	if (str == NULL)
+	{
+		return (NULL);
+	}
 
 	if (s1 == NULL && s2 == NULL)
 	{
@@ -29,8 +34,8 @@ char *str_concat(char *s1, char *s2)
 
 	for (j = 0; j < len2; j++)
 	{
-		str[i + j] = s2[j];
+		str[len1 + j] = s2[j];
 	}
-	str[i + j] = '\0';
+	str[len1 + len2] = '\0';
 	return (str);
 }
