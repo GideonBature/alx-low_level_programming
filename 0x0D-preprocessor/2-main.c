@@ -2,7 +2,7 @@
 #include "main.h"
 #define FILE_NAME __FILE__
 
-/*
+/**
  * main - Entry point of the program
  *
  * Description: This function prints the name of file it was compiled from
