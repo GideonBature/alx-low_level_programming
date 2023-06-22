@@ -44,10 +44,10 @@ int op_div(int a, int b)
 }
 
 /**
- * op_add - add two numbers
+ * op_mod - add two numbers
  * @a: first num
  * @b: second num
- * Return: a + b
+ * Return: a % b
  */
 int op_mod(int a, int b)
 {
