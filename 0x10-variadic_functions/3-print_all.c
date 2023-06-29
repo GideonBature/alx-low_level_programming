@@ -40,6 +40,11 @@ void print_float(va_list arg)
 */
 void print_str(va_list arg)
 {
+	if (!arg)
+	{
+		printf("(nill)");
+		return;
+	}
 	printf("%s", va_arg(arg, char *));
 }
 
@@ -48,6 +53,8 @@ void print_all(const char * const format, ...)
 	va_list arg;
 
 	int i = 0, j;
+
+	char *seperator = "";
 
 	print_t print_func[] = {
 		{ 'c', print_char },
@@ -66,11 +73,9 @@ void print_all(const char * const format, ...)
 		{
 			if (format[i] == print_func[j].alphabet)
 			{
+				printf("%s", seperator);
 				print_func[j].print(arg);
-				if (j < 3)
-				{
-					printf(", ");
-				}
+				seperator = ", ";
 			}
 			j++;
 		}
