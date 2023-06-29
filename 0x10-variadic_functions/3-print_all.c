@@ -49,6 +49,11 @@ void print_str(va_list arg)
 	printf("%s", string);
 }
 
+/**
+ * print_all - prints based on format
+ * @format: specifies what to print
+ * Return: void
+*/
 void print_all(const char * const format, ...)
 {
 	va_list arg;
