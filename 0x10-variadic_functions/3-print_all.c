@@ -65,7 +65,9 @@ void print_all(const char * const format, ...)
 
 	while (format[i])
 	{
-		for (j = 0; j < 4; j++)
+		j = 0;
+
+		while (j < 4)
 		{
 			if (format[i] == print_func[j].alphabet)
 			{
@@ -75,6 +77,7 @@ void print_all(const char * const format, ...)
 					printf(", ");
 				}
 			}
+			j++;
 		}
 		i++;
 	}
