@@ -26,17 +26,19 @@ int main(int argc, char *argv[])
 
 	operation = get_op_func(operator);
 
-	if (operator == NULL || *operator != '+' || *operator != '-'
-	|| *operator != '*' || *operator != '/' || *operator != '%')
+	if (operation == NULL)
 	{
 		printf("Error\n");
 		exit(99);
 	}
 
-	if ((*operator == '/' || *operator == '%') && argv[3] == 0)
+	if (*operator == '/' || *operator == '%')
 	{
-		printf("Error\n");
-		exit(100);
+		if (num2 == 0)
+		{
+			printf("Error\n");
+			exit(100);
+		}
 	}
 
 	result = operation(num1, num2);
