@@ -40,11 +40,6 @@ void print_float(va_list arg)
 */
 void print_str(va_list arg)
 {
-	while (!arg)
-	{
-		printf("(nill)");
-		return;
-	}
 	printf("%s", va_arg(arg, char *));
 }
 
