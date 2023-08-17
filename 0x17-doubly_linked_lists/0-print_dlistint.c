@@ -2,7 +2,7 @@
 
 /**
  * print_dlistint - prints all the elements of a dlist_t list
- * h: the head pointer
+ * @h: the head pointer
  *
  * Return: elements of dlistint_t
  */
@@ -12,6 +12,9 @@ size_t print_dlistint(const dlistint_t *h)
 	const dlistint_t *temp;
 
 	temp = malloc(sizeof(dlistint_t));
+
+	if (temp == NULL)
+		return (1);
 
 	temp = h;
 
