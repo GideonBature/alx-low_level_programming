@@ -1,0 +1,2 @@
+#!/bin/bash
+gcc lib_calc.o -shared -o 100-operations.so
