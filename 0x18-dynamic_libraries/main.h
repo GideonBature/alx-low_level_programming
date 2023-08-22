@@ -1,5 +1,5 @@
-#ifndef _MAIN_H_
-#define _MATH_H_
+#ifndef HEADER_FILE
+#define HEADER_FILE
 
 int _putchar(char c);
 int _islower(int c);
