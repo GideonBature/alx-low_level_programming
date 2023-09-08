@@ -227,6 +227,7 @@ Write a hash function implementing the djb2 algorithm.
 *   File: `1-djb2.c`
 
 -----
+### 2. key -> index
 
 mandatory
 
