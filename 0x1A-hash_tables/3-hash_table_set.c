@@ -25,7 +25,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 
 	index = key_index((const unsigned char *)key, ht->size);
 
-	if (ht->array[index] && (ht->array[index]->key) == *key)
+	if (ht->array[index] && *(ht->array[index]->key) == *key)
 	{
 		free(ht->array[index]->value);
 		ht->array[index]->value = value_copy;
