@@ -32,3 +32,4 @@
 ### 0x1B. [C - Sorting algorithms & Big O](https://github.com/GideonBature/sorting_algorithms)
 ### 0x1C. [C - Makefiles](https://github.com/GideonBature/alx-low_level_programming/tree/master/0x1C-makefiles)
 ### 0x1D. [C - Binary trees](https://github.com/GideonBature/binary_trees)
+### 0x1E. [C - Search Algorithms](https://github.com/GideonBature/alx-low_level_programming/tree/master/0x1E-search_algorithms)
