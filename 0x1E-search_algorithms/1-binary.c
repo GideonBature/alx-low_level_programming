@@ -15,10 +15,10 @@ int binary_search(int *array, size_t size, int value)
 	if (array == NULL)
 		return (-1);
 
-	print_array_elems(array, l, r);
-
 	while (l < r)
 	{
+		print_array_elems(array, l, r);
+
 		mid = (l + r) / 2;
 
 		if (array[mid] == value)
@@ -33,9 +33,9 @@ int binary_search(int *array, size_t size, int value)
 		{
 			l = mid + 1;
 		}
-		print_array_elems(array, l, r);
 
 	}
+	print_array_elems(array, l, r);
 	return (-1);
 }
 
