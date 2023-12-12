@@ -17,9 +17,9 @@ int binary_search(int *array, size_t size, int value)
 
 	while (l <= r)
 	{
-		print_array_elems(array, l, r);
-
 		mid = (l + r) / 2;
+
+		print_array_elems(array, l, r);
 
 		if (array[mid] == value)
 			return (mid);
@@ -56,13 +56,12 @@ void print_array_elems(int *array, size_t left, size_t right)
 
 	for (i = left; i < right + 1; i++)
 	{
-		putchar(array[i] + '0');
+		printf("%d", array[i]);
 
 		if (i < right)
 		{
-			putchar(',');
-			putchar(' ');
+			printf(", ");
 		}
 	}
-	putchar('\n');
+	printf("\n");
 }
